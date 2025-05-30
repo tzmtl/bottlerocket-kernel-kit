@@ -539,6 +539,10 @@ popd
 %{_cross_datadir}/nvidia/tesla/module-objects.d/nv-modeset-kernel.o
 %{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-modeset.mod.o
 
+# drm
+%{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-drm.mod.o
+%{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-drm.o
+
 # tmpfiles
 %{_cross_tmpfilesdir}/nvidia-tesla.conf
 
@@ -642,8 +646,6 @@ popd
 # for now, and we will add them if requested
 %exclude %{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-peermem.mod.o
 %exclude %{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-peermem.o
-%exclude %{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-drm.mod.o
-%exclude %{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-drm.o
 %exclude %{_cross_libexecdir}/nvidia/tesla/bin/nvidia-cuda-mps-control
 %exclude %{_cross_libexecdir}/nvidia/tesla/bin/nvidia-cuda-mps-server
 %exclude %{_cross_bindir}/nvidia-cuda-mps-control
