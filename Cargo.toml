@@ -22,5 +22,8 @@ members = [
     "packages/microcode",
     "packages/libkcapi",
     "packages/shim",
+    "packages/kmod-6.12-nvidia-r570",
+    "packages/kmod-6.18-nvidia-r580-82",
+    "packages/kmod-6.18-nvidia-r595-58",
 ]
 exclude = ["sources"]

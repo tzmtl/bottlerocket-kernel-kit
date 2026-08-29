@@ -32,4 +32,6 @@ linux-firmware = { path = "../../packages/linux-firmware" }
 microcode = { path = "../../packages/microcode" }
 libkcapi = { path = "../../packages/libkcapi" }
 shim = { path = "../../packages/shim" }
-
+kmod-6_12-nvidia-r570 = { path = "../../packages/kmod-6.12-nvidia-r570" }
+kmod-6_18-nvidia-r580-82 = { path = "../../packages/kmod-6.18-nvidia-r580-82" }
+kmod-6_18-nvidia-r595-58 = { path = "../../packages/kmod-6.18-nvidia-r595-58" }
