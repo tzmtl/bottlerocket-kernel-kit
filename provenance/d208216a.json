@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "build_id": "v7.2.1-d208216a",
+  "component": "bottlerocket-kernel-kit",
+  "release_version": "7.2.1",
+  "platform": {
+    "os": "linux",
+    "architecture": "amd64"
+  },
+  "source": {
+    "repository": "https://github.com/tzmtl/bottlerocket-kernel-kit.git",
+    "branch": "downstream/v7.2.1",
+    "commit": "d208216a4f7f04e529bdfd6e4d1de7d1842dd27a",
+    "tree": "7bcb9cebd967ff8f128a6d18e7229322442fcac7",
+    "upstream_release": "v7.2.1",
+    "upstream_commit": "f01a9132bab1a07b5c9c72697cf4e3cbd1dbb771"
+  },
+  "builder": {
+    "image": "registry-mtl-001.mydeos.com/agent/bottlerocket-builder@sha256:7b029107c0a0694f5b7099a2f3d39186b4c2a489a3951105a2e70fee845de34f",
+    "build_cluster": "shared-dev-001",
+    "namespace": "tristan-codex",
+    "jobs": 20
+  },
+  "artifact": {
+    "repository": "registry-mtl-001.mydeos.com/library/bottlerocket-kernel-kit",
+    "release_tag": "v7.2.1",
+    "immutable_index_tag": "v7.2.1-d208216a",
+    "index_digest": "sha256:03e5aae18564e436a87d7d4a2b67b63e332cd25e1ed16400e7d60c4da3831092",
+    "architecture_tag": "v7.2.1-d208216a-x86_64",
+    "architecture_digest": "sha256:da14f7ceef0e143bf8a059a70b63dd5beb32b208cea7b7dedc02c1f36110c677",
+    "archive": {
+      "filename": "bottlerocket-kernel-kit-v7.2.1-d208216a-x86_64.tar",
+      "size_bytes": 5048227840,
+      "sha256": "ce849f665c4995fa57c5222dc93e7ec25e9d104afc437b96e7b5f8e5e48848cd"
+    }
+  },
+  "inventory": {
+    "nvidia_rpm_count": 72,
+    "drivers": [
+      {
+        "kernel": "6.1",
+        "package_suffix": "r580",
+        "nvidia_version": "580.159.03",
+        "origin": "official"
+      },
+      {
+        "kernel": "6.1",
+        "package_suffix": "r595",
+        "nvidia_version": "595.71.05",
+        "origin": "official"
+      },
+      {
+        "kernel": "6.12",
+        "package_suffix": "r570",
+        "nvidia_version": "570.211.01",
+        "origin": "compatibility"
+      },
+      {
+        "kernel": "6.12",
+        "package_suffix": "r580",
+        "nvidia_version": "580.159.03",
+        "origin": "official"
+      },
+      {
+        "kernel": "6.12",
+        "package_suffix": "r595",
+        "nvidia_version": "595.71.05",
+        "origin": "official"
+      },
+      {
+        "kernel": "6.18",
+        "package_suffix": "r580-82",
+        "nvidia_version": "580.82.07",
+        "origin": "compatibility"
+      },
+      {
+        "kernel": "6.18",
+        "package_suffix": "r580",
+        "nvidia_version": "580.159.03",
+        "origin": "official"
+      },
+      {
+        "kernel": "6.18",
+        "package_suffix": "r595-58",
+        "nvidia_version": "595.58.03",
+        "origin": "compatibility"
+      },
+      {
+        "kernel": "6.18",
+        "package_suffix": "r595",
+        "nvidia_version": "595.71.05",
+        "origin": "official"
+      }
+    ]
+  },
+  "features": {
+    "nvidia_drm": ["tesla", "open-gpu", "grid"],
+    "nvidia_peermem": "copy-only"
+  },
+  "verification": {
+    "oci_integrity": "passed",
+    "inventory": "passed",
+    "runtime": "pending Bottlerocket AMI canary"
+  }
+}
