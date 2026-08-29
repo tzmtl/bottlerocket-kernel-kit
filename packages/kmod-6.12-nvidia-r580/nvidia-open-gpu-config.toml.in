@@ -9,3 +9,6 @@ copy-source = "__NVIDIA_MODULES__"
 
 [nvidia-open-gpu.kernel-modules."nvidia-uvm.ko"]
 copy-source = "__NVIDIA_MODULES__"
+
+[nvidia-open-gpu.kernel-modules."nvidia-drm.ko"]
+copy-source = "__NVIDIA_MODULES__"
