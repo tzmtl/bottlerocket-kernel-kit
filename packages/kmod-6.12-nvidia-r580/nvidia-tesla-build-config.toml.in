@@ -16,3 +16,6 @@ link-objects = ["nvidia-modeset.o", "nvidia-modeset.mod.o", ".module-common.o"]
 
 [nvidia-tesla.kernel-modules."nvidia-uvm.ko"]
 link-objects = ["nvidia-uvm.o", "nvidia-uvm.mod.o", ".module-common.o"]
+
+[nvidia-tesla.kernel-modules."nvidia-drm.ko"]
+link-objects = ["nvidia-drm.o", "nvidia-drm.mod.o", ".module-common.o"]

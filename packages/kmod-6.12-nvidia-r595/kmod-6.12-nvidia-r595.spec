@@ -661,6 +661,10 @@ install -p -m 0644 %{S:603} %{buildroot}%{_cross_tmpfilesdir}/nvidia-gdrcopy.con
 %{_cross_datadir}/nvidia/tesla/module-objects.d/nv-modeset-kernel.o
 %{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-modeset.mod.o
 
+# drm
+%{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-drm.mod.o
+%{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-drm.o
+
 # tmpfiles
 %{_cross_tmpfilesdir}/nvidia-tesla.conf
 
@@ -770,8 +774,6 @@ install -p -m 0644 %{S:603} %{buildroot}%{_cross_tmpfilesdir}/nvidia-gdrcopy.con
 # for now, and we will add them if requested
 %exclude %{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-peermem.mod.o
 %exclude %{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-peermem.o
-%exclude %{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-drm.mod.o
-%exclude %{_cross_datadir}/nvidia/tesla/module-objects.d/nvidia-drm.o
 %if "%{_cross_arch}" == "x86_64"
 %exclude %{_cross_libexecdir}/nvidia/tesla/bin/nvidia-ngx-updater
 %exclude %{_cross_bindir}/nvidia-ngx-updater
