@@ -24,14 +24,14 @@
   "artifact": {
     "repository": "registry-mtl-001.mydeos.com/library/bottlerocket-kernel-kit",
     "release_tag": "v7.2.1",
-    "immutable_index_tag": "v7.2.1-d208216a",
-    "index_digest": "sha256:03e5aae18564e436a87d7d4a2b67b63e332cd25e1ed16400e7d60c4da3831092",
-    "architecture_tag": "v7.2.1-d208216a-x86_64",
-    "architecture_digest": "sha256:da14f7ceef0e143bf8a059a70b63dd5beb32b208cea7b7dedc02c1f36110c677",
+    "immutable_index_tag": "v7.2.1-d208216a-accept-20260830t002934z",
+    "index_digest": "sha256:07c55b4dec1a704a78fd6ee9014af88afc477bf8dd3126718d4606fdd4146ab8",
+    "architecture_tag": "v7.2.1-d208216a-accept-20260830t002934z-x86_64",
+    "architecture_digest": "sha256:c84f0657e54db56767b6a3b63ed9feb9cbf099bdd2ccb8d3f0706d2c98d1f7c5",
     "archive": {
       "filename": "bottlerocket-kernel-kit-v7.2.1-d208216a-x86_64.tar",
-      "size_bytes": 5048227840,
-      "sha256": "ce849f665c4995fa57c5222dc93e7ec25e9d104afc437b96e7b5f8e5e48848cd"
+      "size_bytes": 5048258560,
+      "sha256": "c917b86fc4b277dfd3e5255dca063896158117258e6f27e459cff49d871c449c"
     }
   },
   "inventory": {
@@ -100,6 +100,6 @@
   "verification": {
     "oci_integrity": "passed",
     "inventory": "passed",
-    "runtime": "pending Bottlerocket AMI canary"
+    "runtime": "partial: A10G passed on private AMI ami-0b71b0e46fd3e60ba in AWS account 225989333724, us-west-2; the pre-existing shared input generator reproduced the expected MSG_CTRUNC negative control while the task-owned privileged-opener -> confined-generator -> distinct-MCS-consumer input-device fd path passed; L40S was not launched because AWS reported InsufficientInstanceCapacity"
   }
 }
